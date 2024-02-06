@@ -1,0 +1,129 @@
+/* Main class name was 'sections-wrapper' which is used in multiple files 'caseAudio, caseVideo, caseHybrid, caseImage' */
+.text-sections-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  
+}
+
+/* Main class name was 'survey-box-text-left' which is used in the files 'caseAudio, caseVideo' */
+.text-survey-box-left {
+  width: 900px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+  margin: 1em;
+  outline: solid var(--primary-color) 5px;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 10px grey;
+}
+
+/* Main class name was 'background-text-content' and it should be a generic class which is used throughout the application */
+.text-background-content {
+  text-align: justify;
+}
+.section-class{
+  width: 25em;
+}
+/* Main class name was 'text' and it should be a generic class which is used in the files 'caseAudio, caseVideo' */
+.text {
+  margin: 0 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-text{
+  overflow-y:scroll;
+  overflow-x: hidden;
+  height: 22em;
+  width: 22em;
+  font-size: 1.1em;
+  text-align: justify;
+  margin: 0em;
+  padding-right: 4%;
+  
+  
+}
+
+/* Main class name was 'survey-box-text-right', used files 'caseAudio, caseVideo'   */ 
+.text-survey-box-right {
+  width: 430px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+  margin: 1em;
+  outline: solid var(--primary-color) 5px;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 10px grey;
+  background-color: ;
+}
+
+/* Main class name was 'scaled-image-fit-height' used in multiple files 'caseAudio, caseVideo, caseHybrid, caseImage' varun check this one */
+.text-scaled-image-fit-height {
+  width: auto;
+  height: 100%;
+  background-color: black;
+}
+
+/* Main class name was 'generic-image-section' used in multiple files 'caseAudio, caseVideo, caseHybrid, caseImage' */
+.text-generic-image-section {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+/* Main class name was 'text-text-rank-section' used in several files 'caseAudio, caseVideo' */
+.text-text-rank-section {
+  height: 100%;
+  width: 12em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Main class name was 'ranking-wrapper' used in several files 'caseVideo, caseAudioColumnRight, caseVideoColumnRight, caseHybridColumnRight, caseImageColumnRight' */
+.text-ranking-wrapper {
+  display: "flex";
+  flex-direction: "column";
+  align-items: "center";
+  justify-content: "center";
+  width: 100%;
+  overflow: hidden;
+  position: "relative";
+  bottom: "2em";
+  height: 100%;
+}
+.text-generic-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+.generic-text-section-button {
+  margin-top: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: ;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance:none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  /* -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5); */
+}
