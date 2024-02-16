@@ -660,3 +660,74 @@ fieldset.likertScale .likertIndicator {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #9c9393;
 }
+
+ /* new added */
+ /* ParagraphWithList.css */
+
+.comment-modal-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.highlighted-text {
+  background-color: yellow;
+  display: inline;
+}
+
+.comment-highlight {
+  background-color: yellow;
+  margin: 2px 0;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.comment-modal textarea {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.comment-modal button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  top: 50%;
+  /* adjust as needed */
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  width: 150px;
+  /* Adjust the width as needed */
+}
+
+.nav-menu-container {
+  text-align: center;
+}
+
+.edit-menu {
+  top: 50%;
+  /* adjust as needed */
+  right: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  width: 150px;
+  /* Adjust the width as needed */
+}
+
+.edit-menu-container {
+  text-align: center;
+}

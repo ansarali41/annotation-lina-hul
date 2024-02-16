@@ -1,7 +1,5 @@
 import React from "react";
-import "./ParagraphWithList.css";
 import GenericBackgroundSubSection from "./genericBackgroundSubSection";
-
 const GenericBackgroundSection = ({
   sectionTitle,
   sectionText,
@@ -12,12 +10,8 @@ const GenericBackgroundSection = ({
 }) => {
   return (
     <div className={sectionClassName}>
-      <span className={sectionTitleClassName} dangerouslySetInnerHTML={{ __html: sectionTitle }}>
-        {}
-      </span>
-      <p className={sectionTextClassName} dangerouslySetInnerHTML={{ __html: sectionText }}>
-        {}
-      </p>
+      <span className={sectionTitleClassName}>{sectionTitle}</span>
+      <p className={sectionTextClassName}>{sectionText}</p>
       {sectionContent.map((e, index) => (
         <GenericBackgroundSubSection
           key={index}

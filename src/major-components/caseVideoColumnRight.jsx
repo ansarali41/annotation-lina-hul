@@ -1,6 +1,5 @@
 import React from "react";
 import GenericImageSection from "../minor-components/genericImageSection";
-
 const CaseVideoColumnRight = ({
   className,
   title,
@@ -49,10 +48,8 @@ const CaseVideoColumnRight = ({
 }) => {
   return (
     <div className={className}>
-      <h4 dangerouslySetInnerHTML={{ __html: title }}>{}</h4>
-      <p className={textClassName} dangerouslySetInnerHTML={{ __html: text }}>
-        {}
-      </p>
+      <h4>{title}</h4>
+      <p className={textClassName}>{text}</p>
       <div className="video-ranking-wrapper">
         <GenericImageSection
           title={topSectionTitle}

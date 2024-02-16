@@ -26,7 +26,7 @@ const useCustomHotkeys = ({
   useHotkeys("Shift+f", () => {
     if (location.pathname === "/survey/registration") {
       setName("NA (Development)");
-      setEmail("me@mulo.no");
+      setEmail("me@mola.no");
       setCountry("NA (Development)");
       setDegree("NA (Development)");
       setFieldOfExpertise("NA (Development)");

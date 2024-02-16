@@ -269,9 +269,9 @@
   "REACT_APP_footer": {
     "icon1ClassName": "fa fa-envelope-o mr-1 fa-lg generic-icon",
     "icon2ClassName": "fa fa-github ml-1 fa-lg generic-icon",
-    "icon1Url": "mailto:host@simula.no",
-    "icon2Url": "https://github.com/simula/huldra",
-    "label": "host@simula.no"
+    "icon1Url": "mailto:me@mola.no",
+    "icon2Url": "https://github.com/",
+    "label": "host@mola.no"
   },
   "REACT_APP_header": {
     "labelBackground": "Sample App | Background",

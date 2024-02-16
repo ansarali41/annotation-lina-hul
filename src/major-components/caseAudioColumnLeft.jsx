@@ -1,6 +1,5 @@
 import React from "react";
 import GenericAudioSection from "../minor-components/genericAudioSection";
-
 const CaseAudioColumnLeft = ({
   className,
   title,
@@ -33,10 +32,8 @@ const CaseAudioColumnLeft = ({
 }) => {
   return (
     <div className={className}>
-      <h4 dangerouslySetInnerHTML={{ __html: title }}>{}</h4>
-      <p className={textClassName} dangerouslySetInnerHTML={{ __html: text }}>
-        {}
-      </p>
+      <h4>{title}</h4>
+      <p className={textClassName}>{text}</p>
       <div className="audio-generic-section">
         <GenericAudioSection
           hasButton={sectionHasButton}

@@ -1,7 +1,7 @@
 import React from "react";
+import InputTextArea from "../minor-components/inputTextArea";
 import InputLikert from "../minor-components/inputLikert";
 import InputMultipleChoice from "../minor-components/inputMultipleChoice";
-import InputTextArea from "../minor-components/inputTextArea";
 import { handleTextFieldChange } from "../utils/handleTextFieldChange";
 
 const FeedbackForm = ({ feedbackFormQuestions, title, text }) => {
@@ -13,11 +13,8 @@ const FeedbackForm = ({ feedbackFormQuestions, title, text }) => {
 
   return (
     <div className="feedback-form-wrapper">
-      <h3 dangerouslySetInnerHTML={{ __html: title }}>{}</h3>
-
-      <div className="summary-and-feedback-text-content" dangerouslySetInnerHTML={{ __html: text }}>
-        {}
-      </div>
+      <h3>{title}</h3>
+      <div className="summary-and-feedback-text-content">{text} </div>
       <form className="feedback-form">
         {feedbackFormQuestions.map((e, index = 0) => {
           return e.questionType === "text"

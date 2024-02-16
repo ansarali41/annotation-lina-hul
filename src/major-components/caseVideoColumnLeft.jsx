@@ -1,6 +1,5 @@
 import React from "react";
 import GenericVideoSection from "../minor-components/genericVideoSection";
-
 const CaseVideoColumnLeft = ({
   className,
   title,
@@ -33,10 +32,8 @@ const CaseVideoColumnLeft = ({
 }) => {
   return (
     <div className={className}>
-      <h4 dangerouslySetInnerHTML={{ __html: title }}>{}</h4>
-      <p className={textClassName} dangerouslySetInnerHTML={{ __html: text }}>
-        {}
-      </p>
+      <h4>{title}</h4>
+      <p className={textClassName}>{text}</p>
       <div className="video-generic-section">
         <GenericVideoSection
           className={sectionClassName}

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import GenericTextSection from "../minor-components/genericTextSection";
 const CaseTextColumnLeft = ({
   className,
@@ -22,8 +22,8 @@ const CaseTextColumnLeft = ({
 }) => {
   return (
     <div className={className}>
-      <h4>{sectionTitle}</h4>
-      <p className={textClassName}>{sectionText}</p>
+      <h4>{title}</h4>
+      <p className={textClassName}>{text}</p>
       <div className="text-generic-section">
         <GenericTextSection
           className={sectionClassName}

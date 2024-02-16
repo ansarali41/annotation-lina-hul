@@ -305,7 +305,7 @@
   },
   "REACT_APP_general": {
     "softwareInfoTag": "NA (Development)",
-    "appName": "Huldra",
+    "appName": "S-hul-app",
     "allowRevisitingAnswers": true,
     "allowProceedingWithoutAnswering": false,
     "caseImageViewDetailsMandatory": false,
@@ -329,9 +329,9 @@
     "footer": {
       "icon1ClassName": "fa fa-envelope-o mr-1 fa-lg generic-icon",
       "icon2ClassName": "fa fa-github ml-1 fa-lg generic-icon",
-      "icon1Url": "mailto:me@mulo.no",
+      "icon1Url": "mailto:me@mola.no",
       "icon2Url": "https://github.com",
-      "label": "me@mulo.no"
+      "label": "me@mola.no"
     },
     "header": {
       "labelBackground": "Background",
