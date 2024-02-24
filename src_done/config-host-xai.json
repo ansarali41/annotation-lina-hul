@@ -1,0 +1,271 @@
+{
+  "REACT_APP_warning": {
+    "warningMessage": "Please view this page on a device with a screen resolution of at least 1200 x 800.",
+    "title": "HOST-XAI"
+  },
+  "REACT_APP_home": {
+    "title": "HOST-XAI",
+    "introText": "We help researchers properly assess the quality of AI explanation methods.",
+    "signupText": "If you don't have a participant ID, you can have one by clicking the button below.",
+    "additionalText": " Please view this application in full screen mode."
+  },
+  "REACT_APP_registration": {},
+
+  "REACT_APP_background": [
+    {
+      "sectionTitle": "Study description",
+      "sectionText": "We are researching different ways to explain the output of a system based on Artificial Intelligence (AI) for medical applications. We focus on the findings of an AI-based system that has analyzed a colonoscopy video, and wish to assess the usefulness of different visual explanations for the findings. In this study, we focus on the findings of an AI-based system that has analyzed a colonoscopy video. You will be presented with 10 cases. In each case, you will be provided with an image from the video, the prediction that the AI-based system has made about the contents of the image, and 2 alternative explanations for the prediction. We ask you to rank the explanations based on which one you find most helpful. Please carefully look at the image and both explanations before you provide your ranking. Please note that we are not asking you to evaluate the model classification performance, but the explanation it provides you. The model could be wrong or right, but please base your rating on the usefulness of the explanation. In the end, we will ask you a few questions regarding your overall experience with different explanation methods, and possible areas for improvement. We expect that the entire survey will take no more than 30 minutes to complete. By participating in this study, you agree that we may publish anonymized sections of your answers as part of our research study. We will NOT publish any information that could be linked to you. Researchers will only use your answers to gain insight into different opinions about explainability. The study was approved by the Norwegian Regional Committees for Medical and Health Research Ethics.",
+      "sectionClassName": "section",
+      "sectionTitleClassName": "section-title",
+      "sectionTextClassName": "background-text-content",
+      "sectionContent": []
+    },
+    {
+      "sectionTitle": "Explanation methods",
+      "sectionText": "There are different ways of explaining why an AI model predicts a specific outcome. Explanation methods mostly fall into 2 categories: we call these intrinsic (saliency based) and dataset based. Each category is further described below.",
+      "sectionClassName": "section",
+      "sectionTitleClassName": "section-title",
+      "sectionTextClassName": "background-text-content",
+      "sectionContent": [
+        {
+          "title": "Intrinsic (saliency based)",
+          "text": "Intrinsic explanations visualize which regions of an image the model finds most important for a given prediction. These visualizations are presented as heatmaps, where red indicates important regions and blue indicates non-important regions.",
+          "className": "explanation-background",
+          "imagePath": "/gallery/background/background-intrinsic.png",
+          "imageClassName": "explanation-background-image",
+          "imageAlternativeText": "Image",
+          "descriptionClassName": "explanation-background-description",
+          "titleClassName": "explanation-background-label",
+          "textClassName": "background-text-content"
+        },
+        {
+          "title": "Dataset based",
+          "text": "Dataset based explanations use similarities and differences to other images from the training dataset to indicate which regions of an image support or oppose a predicted class. This is visualized as red or green regions on the image, where green areas support the predicted class and the red areas oppose it.",
+          "className": "explanation-background",
+          "imagePath": "/gallery/background/background-dataset-based.png",
+          "imageClassName": "explanation-background-image",
+          "imageAlternativeText": "Image",
+          "descriptionClassName": "explanation-background-description",
+          "titleClassName": "explanation-background-label",
+          "textClassName": "background-text-content"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Pathological findings",
+      "sectionText": "In the context of our study, a pathological finding refers to an abnormal feature within the gastrointestinal tract. This is endoscopically visible as a damage or change in the normal mucosa. The finding may be a sign of an ongoing disease or a precursor to, for example, cancer. Pathology detection and classification is important for initiating the correct treatment and/or follow-up of the patient.",
+      "sectionClassName": "section",
+      "sectionTitleClassName": "section-title",
+      "sectionTextClassName": "background-text-content",
+      "sectionContent": [
+        {
+          "title": "Polyps",
+          "text": "Colon polyps are lesions that appear on the colon wall as mucosal outgrows which can be flat, elevated, or pedunculated. They can be distinguished from normal mucosa by color and surface pattern. Most colon polyps are harmless, but some have the potential to become cancerous. Detection and removal of polyps are therefore essential to prevent the development of cancer.",
+          "className": "explanation-background",
+          "imagePath": "/gallery/background/background-polyps.png",
+          "imageClassName": "explanation-background-image",
+          "imageAlternativeText": "Image",
+          "descriptionClassName": "explanation-background-description",
+          "titleClassName": "explanation-background-label",
+          "textClassName": "background-text-content"
+        }
+      ]
+    }
+  ],
+  "REACT_APP_demonstration": [
+    {
+      "listClassName": "demonstration-text-list",
+      "textClassName": "demonstration-text",
+      "textBefore": "In the following, you will be presented with x cases, displaying the findings of an AI-based system that has analyzed a colonoscopy video. For each case, you will be provided with:",
+      "listOptions": [
+        "An image from the video.",
+        "The prediction that the AI model has made about the contents of the image (e.g., 'The AI model has predicted that this image contains a polyp.')",
+        "Alternative explanations for the prediction."
+      ],
+      "textAfter": "We ask you to rank the explanations based on which one you find most helpful. Please carefully look at the image and both explanations before you provide your ranking. Once you click on one of the explanations, your ranking will appear on the right."
+    },
+
+    {
+      "demonstrationText": "Demo1 Image",
+      "hasImage": true,
+      "imagePath": "/gallery/demonstration/image1.jpg",
+      "videoPath": "/gallery/video-sample.mp4",
+      "videoHeight": "300px",
+      "videoWidth": "450px",
+      "imageClassName": "demonstration-image"
+    },
+    {
+      "demonstrationText": "Demo2 Video",
+      "hasImage": false,
+      "imagePath": "/gallery/demonstration/image1.jpg",
+      "videoPath": "/gallery/video-sample.mp4",
+      "videoHeight": "300px",
+      "videoWidth": "450px",
+      "imageClassName": "demonstration-image"
+    }
+  ],
+  "REACT_APP_case": {
+    "caseColumnLeft": { "label": "Case" },
+    "caseColumnMiddle": {
+      "title": "Explanations",
+      "text": "Below are two explanations showing which regions of the image support this prediction. Please review both explanations (click “See explanation”) to proceed with the ranking.",
+      "leftSectionTitle": "(A) Intrinsic",
+      "leftSectionButtonlabel": "View explanation",
+      "leftSectionTextWithIconsLabel": "Viewed",
+      "rightSectionTitle": "(B) Dataset based",
+      "rightSectionButtonlabel": "View explanation",
+      "rightSectionTextWithIconsLabel": "Viewed",
+      "popup1": {
+        "mainTitle": "Explanation: (A) Intrinsic",
+        "leftImageTitle": "Original image",
+        "rightImageTitle": "Explanation",
+        "descriptionTitle": "Description",
+        "descriptionText": "The intrinsic explanation visualizes which regions of an image are most important for a given prediction. These visualizations are represented as heatmaps, where red regions are important and blue ones non-important."
+      },
+      "popup2": {
+        "mainTitle": "Explanation: (B) Dataset based",
+        "leftImageTitle": "Original image",
+        "rightImageTitle": "Explanation",
+        "descriptionTitle": "Description",
+        "descriptionText": "Dataset based explanations use similarities and differences to other images from the training dataset to indicate which regions of an image support or oppose a predicted class. This is visualized as red or green regions on the image, where green areas support the predicted class and the red areas oppose it."
+      }
+    },
+    "caseColumnRight": {
+      "title": "Your ranking",
+      "text": "Please click on one of the thumbnails (explanation A or B) to place it on top. Do not drag and drop the image. The top image is your preferred explanation for this case."
+    }
+  },
+  "REACT_APP_caseVideo": {
+    "caseVideoColumnLeft": {
+      "label": "Case",
+      "sectionVideoHeight": "300px",
+      "sectionVideoWidth": "410px",
+      "rightSectionVideoLabel": "Video B",
+      "leftSectionVideoLabel": "Video A",
+      "sectionButtonlabel": "Select"
+    },
+    "caseVideoColumnRight": {
+      "title": "Your ranking",
+      "text": "Please select one of the videos to place it on top. The top video is your preferred for this case."
+    }
+  },
+  "REACT_APP_summaryAndFeedback": {
+    "summary": {
+      "title": "Summary of cases",
+      "text": "Lorem ipsum tur repudiandae nobis! Vero itaque dolorum dicta!",
+      "label": "Case",
+      "videoPlaceholderIconPath": "/gallery/video-placeholder.png"
+    },
+    "feedbackForm": {
+      "title": "Overall feedback",
+      "text": "Lorem ipsum tur repudiandae nobis! Vero itaque dolorum dicta!",
+      "feedbackFormQuestions": [
+        {
+          "questionType": "text",
+          "id": "Q1",
+          "label": "What do you think of explanation method (A)?",
+          "optional": false,
+          "showTooltip": false,
+          "className": "feedback-text-input",
+          "outputJsonLabelText": "A_Overall"
+        },
+        {
+          "questionType": "text",
+          "id": "Q2",
+          "label": "What do you think of explanation method (B)?",
+          "optional": false,
+          "showTooltip": false,
+          "className": "feedback-text-input",
+          "outputJsonLabelText": "B_Overall"
+        },
+
+        {
+          "questionType": "likert",
+          "label": "Please rate the following expressions on a scale of 1 to 10 (1=DO NOT AGREE,10=AGREE COMPLETELY)",
+          "optional": false,
+          "id": "Q3",
+          "likertQuestions": [
+            {
+              "question": "Explanation (A) increased my understanding of the result.",
+              "size": 10,
+              "label": "A_Understanding"
+            },
+            {
+              "question": "Explanation (B) increased my understanding of the result.",
+              "size": 10,
+              "label": "B_Understanding"
+            },
+            {
+              "question": "Explanation (A) increased my trust in the AI model.",
+              "size": 10,
+              "label": "A_Trust"
+            },
+            {
+              "question": "Explanation (B) increased my trust in the AI model.",
+              "size": 10,
+              "label": "B_Trust"
+            },
+            {
+              "question": "It is important that an explanation accompanies a prediction.",
+              "size": 10,
+              "label": "ExplanationImportance"
+            },
+            {
+              "question": "The explanations relate spatially to the finding in the image.",
+              "size": 10,
+              "label": "ExplanationSpatialRelevance"
+            },
+            {
+              "question": "I found the colors used to visualize the explanations to be appropriate.",
+              "size": 10,
+              "label": "ExplanationColors"
+            }
+          ]
+        },
+        {
+          "questionType": "mc",
+          "label": "Do you prefer to have an explanation, or would you rather only know the prediction?",
+          "id": "Q4",
+          "choices": [
+            "I prefer the prediction, with an explanation",
+            "I prefer the prediction, without an explanation"
+          ],
+          "outputJsonLabelRadio": "PredictionExplanation",
+          "outputJsonLabelText": "PredictionExplanation_Detail"
+        },
+        {
+          "questionType": "mc",
+          "label": "In your opinion, which type of explanation would be useful in clinical practice?",
+          "id": "Q5",
+          "choices": ["(A) Intrinsic", "(B) Dataset based", "Both", "None"],
+          "outputJsonLabelRadio": "ExplanationPreference",
+          "outputJsonLabelText": "ExplanationPreference_Detail",
+          "hasCommentBox": false
+        },
+        {
+          "questionType": "mc",
+          "label": "Assuming that an AI model is reporting pathological findings live during a colonoscopy procedure, would you prefer that explanations for the predictions be shown during or after the procedure?",
+          "id": "Q6",
+          "choices": ["During", "After", "Neither"],
+          "outputJsonLabelRadio": "ExplanationBeforeAfter",
+          "outputJsonLabelText": "ExplanationBeforeAfter_Detail"
+        }
+      ]
+    }
+  },
+  "REACT_APP_end": {
+    "title": "",
+    "endMessage": "Thank you for participating in our survey!",
+    "redirectTimeout": 2500
+  },
+  "REACT_APP_sourceApp": "NA (Development)",
+  "REACT_APP_outputJson": [
+    "ParticipantInfo",
+    "CaseOrder",
+    "SoftwareInfo",
+    "CaseStudyAnswers",
+    "SessionEvents",
+    "FeedbackFormAnswers",
+    "SessionInfo"
+  ]
+}

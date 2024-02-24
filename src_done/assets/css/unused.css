@@ -1,0 +1,70 @@
+.headers {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 0.22em;
+}
+.custom-tooltip {
+  max-width: 400px !important;
+  top: 3em !important;
+  cursor: pointer;
+}
+.explanations-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+}
+.explanation-wrapper {
+  cursor: pointer;
+  width: 11em;
+  height: 11em;
+  margin: 0 0.4em 0 0.4em;
+}
+.controls-with-padding {
+  width: 100%;
+  display: flex;
+  padding-right: 46.5%;
+  justify-content: space-between;
+}
+.play-icon {
+  vertical-align: middle;
+  color: var(--confirm-color);
+}
+.see-details {
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+.selected {
+  border: #f15d22 6px solid;
+}
+.right-arrow {
+  position: relative;
+  top: 26%;
+  vertical-align: middle;
+}
+.visuals {
+  display: flex;
+  width: 100%;
+  text-align: justify;
+}
+.visuals-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.case-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-header {
+  text-align: center;
+}
+.wrapping-text {
+  display: flex;
+  flex-wrap: wrap;
+  height: 4em;
+  text-align: justify;
+}

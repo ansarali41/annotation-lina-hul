@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
-import CaseTextColumnLeft from "../major-components/caseTextColumnLeft";
-import CaseTextColumnRight from "../major-components/caseTextColumnRight";
-import { AppContext } from "../context/appContext";
-import "../assets/css/caseText.css";
-import getConfig from "../utils/handleStorageConfig";
+import CaseTextColumnLeft from "./caseTextColumnLeft";
+import CaseTextColumnRight from "./caseTextColumnRight";
+import { AppContext } from "../../context/appContext";
+import "../../assets/css/caseText.css";
+import getConfig from "../../utils/handleStorageConfig";
 
 const CaseText = ({ REACT_APP_caseText, caseId, totalCases }) => {
   const [first, setFirst] = useState("");

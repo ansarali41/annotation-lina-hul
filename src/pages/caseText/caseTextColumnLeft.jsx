@@ -1,5 +1,5 @@
 import React from "react";
-import GenericTextSection from "../minor-components/genericTextSection";
+import GenericTextSection from "../../minor-components/genericTextSection";
 const CaseTextColumnLeft = ({
   className,
   title,
