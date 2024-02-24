@@ -2,7 +2,7 @@ import CaseImage from "../pages/caseImage";
 import CaseVideo from "../pages/caseVideo";
 import CaseHybrid from "../pages/caseHybrid";
 import CaseAudio from "../pages/caseAudio";
-import CaseText from "../pages/caseText";
+import CaseText from "../pages/caseText/caseText";
 import { useContext } from "react";
 import { AppContext } from "../context/appContext";
 import { fetchConfigVariablesBatch } from "../utils/handleConfigVars";

@@ -1,6 +1,6 @@
 import React from "react";
 import GenericImageSection from "../../minor-components/genericImageSection";
-import TextHighlight from "../../major-components/textHighlight";
+import TextHighlight from "../caseTextAnnotation/textHighlight";
 
 const CaseTextColumnRight = ({
   className,

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TextHighlight from "../../major-components/textHighlight";
+import TextHighlight from "../caseTextAnnotation/textHighlight";
 import { getAsset } from "../../utils/loadAssets";
 
 const RankedText = ({ url, className, label, scrollClassName }) => {

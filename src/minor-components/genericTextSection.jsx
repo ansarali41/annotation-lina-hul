@@ -1,6 +1,6 @@
 import React from "react";
 import GenericButton from "./genericButton";
-import RankedText from "./rankedText";
+import RankedText from "../pages/caseText/rankedText";
 
 const GenericTextSection = ({
   className,
