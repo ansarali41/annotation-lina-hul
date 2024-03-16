@@ -35,6 +35,7 @@ const fetchCases = async () => {
       video: [],
       audio: [],
       text: [],
+      imageAnnotation: [],
     };
 
     validCases.forEach((validCase) => {
@@ -53,6 +54,7 @@ const fetchCases = async () => {
       ...casesByType.video.map((validCase) => validCase.name),
       ...casesByType.audio.map((validCase) => validCase.name),
       ...casesByType.text.map((validCase) => validCase.name),
+      ...casesByType.imageAnnotation.map((validCase) => validCase.name),
     ];
 
     validCaseFiles = [
@@ -61,6 +63,7 @@ const fetchCases = async () => {
       ...casesByType.video.map((validCase) => validCase.files),
       ...casesByType.audio.map((validCase) => validCase.files),
       ...casesByType.text.map((validCase) => validCase.files),
+      ...casesByType.imageAnnotation.map((validCase) => validCase.files),
     ];
   } else if (shuffle === "full") {
     validCases = _.shuffle(validCases);
@@ -99,6 +102,25 @@ const validateCase = async (caseName) => {
   let files = [];
 
   if (type === "image") {
+    const fileName1 = `${fileNameBase}.json`;
+    const fileExists1 = await f.fileExists(fileName1, "json");
+    if (!fileExists1) {
+      return false;
+    }
+
+    const fileNameArrayArray = [
+      extensions.image.map((ext) => `${fileNameBase}.${ext}`),
+      extensions.image.map((ext) => `${fileNameBase}-a.${ext}`),
+      extensions.image.map((ext) => `${fileNameBase}-b.${ext}`),
+    ];
+
+    const group = await getFileNameGroup(fileNameArrayArray, "image");
+    if (!group) {
+      return false;
+    }
+
+    files = [fileName1].concat(group);
+  } else if (type === "imageannotation") {
     const fileName1 = `${fileNameBase}.json`;
     const fileExists1 = await f.fileExists(fileName1, "json");
     if (!fileExists1) {

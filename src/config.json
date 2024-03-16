@@ -239,6 +239,46 @@
       "text": "Please select one of the audio clips to place it on top. The top audio clip is your preferred option for this case."
     }
   },
+  
+
+
+
+  "REACT_APP_caseImageAnnotation": {
+    "caseImageColumnLeft": {
+      "label": "Case"
+    },
+    "caseImageColumnMiddle": {
+      "title": "Answer Options",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque odio, tempus quis sapien id, accumsan aliquam nunc. Proin tincidunt, felis nec iaculis rutrum, ex quam condimentum ante, id sagittis elit odio sed risus.",
+      "leftSectionTitle": "Option A",
+      "leftSectionButtonlabel": "View details",
+      "leftSectionTextWithIconsLabel": "Viewed",
+      "rightSectionTitle": "Option B",
+      "rightSectionButtonlabel": "View details",
+      "rightSectionTextWithIconsLabel": "Viewed",
+      "popupA": {
+        "mainTitle": "Sample Title for Popup A",
+        "leftImageTitle": "Original",
+        "rightImageTitle": "Option A",
+        "descriptionTitle": "Description",
+        "descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque odio, tempus quis sapien id, accumsan aliquam nunc. Proin tincidunt, felis nec iaculis rutrum, ex quam condimentum ante, id sagittis elit odio sed risus."
+      },
+      "popupB": {
+        "mainTitle": "Sample Title for Popup B",
+        "leftImageTitle": "Original",
+        "rightImageTitle": "Option B",
+        "descriptionTitle": "Description",
+        "descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque odio, tempus quis sapien id, accumsan aliquam nunc. Proin tincidunt, felis nec iaculis rutrum, ex quam condimentum ante, id sagittis elit odio sed risus.",
+        "gallerySubstring": "similar"
+      }
+    },
+    "caseImageColumnRight": {
+      "title": "Your Answer",
+      "text": "Please click on one of the images (option A or B) to place it on top. Do not drag and drop the image. The top image is your preferred option for this case."
+    }
+  },
+
+
   "REACT_APP_summaryAndFeedback": {
     "summary": {
       "display": true,
@@ -311,7 +351,7 @@
     "caseImageViewDetailsMandatory": false,
     "caseHybridViewDetailsMandatory": false,
     "caseOrder": {
-      "cases": ["audio-bird","text-sample","hybrid-flowerbird","image-flower","video-bird"],
+      "cases": ["audio-bird","text-sample","hybrid-flowerbird","image-flower","imageannotation-boundboxing","video-bird"],
       "shuffle": ""
     },
     "storage": {

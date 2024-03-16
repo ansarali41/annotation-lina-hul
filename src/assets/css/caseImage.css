@@ -19,6 +19,19 @@
   box-shadow: 0px 0px 10px grey;
 }
 
+.case-image-annotation-column {
+  width: calc(100% - 50%);
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+  margin: 1em;
+  /* outline: solid var(--primary-color) 5px; */
+  border-radius: 0.2em;
+  /* box-shadow: 0px 0px 10px grey; */
+}
+
 .case-image-background-text {
   text-align: justify;
 }
